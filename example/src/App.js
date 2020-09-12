@@ -4,7 +4,18 @@ import { ExampleComponent } from 'react-sample-countdown'
 import 'react-sample-countdown/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const onFinish = () => {
+    // console.log('finished!')
+    alert('Finished !!!')
+  }
+
+  return (
+    <ExampleComponent
+      text='Countdown to answer the question'
+      time='00:00:15'
+      onFinish={onFinish}
+    />
+  )
 }
 
 export default App

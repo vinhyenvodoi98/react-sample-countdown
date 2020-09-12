@@ -8,21 +8,39 @@
 
 ```bash
 npm install --save react-sample-countdown
+
+OR
+
+yarn add react-sample-countdown
 ```
+
+## Demo
+
+![demo](https://media.giphy.com/media/LRx3K5wJeFpip7f03r/giphy.gif)
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'react-sample-countdown'
+import { ExampleComponent } from 'react-sample-countdown'
 import 'react-sample-countdown/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
+const App = () => {
+  const onFinish = () => {
+    console.log('finished!')
   }
+
+  return (
+    <ExampleComponent
+      text='Countdown to answer the question'
+      time='00:00:15'
+      onFinish={onFinish}
+    />
+  )
 }
+
+export default App
 ```
 
 ## License

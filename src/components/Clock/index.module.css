@@ -1,0 +1,11 @@
+.clock_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  width: 90px;
+  height: 90px;
+}
